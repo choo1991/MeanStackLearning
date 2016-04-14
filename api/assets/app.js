@@ -1,20 +1,28 @@
 var app = angular.module('app', []);
 
-app.controller('PostsCtrl', function ($scope, $http) {
-	$http.get('http://localhost:3000/api/posts')
-	.success(function (posts) {
+app.controller('PostsCtrl', function ($scope, PostsSvc) {
+	PostsSvc.fetch().success(function (posts) {
 		$scope.posts = posts;
 	});
 
 	$scope.addPost = function () {
 		if ($scope.newBody) {
-			$http.post('/api/posts/',  {
-				username: 'newPerson',
+			PostsSvc.create({
+				username: 'UserOne',
 				body: $scope.newBody
 			}).success(function (post) {
 				$scope.posts.unshift(post);
 				$scope.newBody = null;
-			})
+			});
 		}
+	}
+});
+
+app.service('PostsSvc', function ($http) {
+	this.fetch = function () {
+		return $http.get('/api/posts');
+	}
+	this.create = function (post) {
+		return $http.post('/api/posts/', post);
 	}
 });
