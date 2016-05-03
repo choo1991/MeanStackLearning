@@ -1,4 +1,8 @@
-var Post = require('./models/post.js');
+/* posts.js
+Posts API. Handle routing depending on URL and procedure.
+*/
+
+var Post = require('../../models/post.js');
 var router = require('express').Router();
 
 router.get('/', function (req, res, next) {

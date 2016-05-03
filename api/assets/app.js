@@ -1,3 +1,7 @@
+/* app.js
+Angular code backing up the posts page.
+*/
+
 var app = angular.module('app', []);
 
 app.controller('PostsCtrl', function ($scope, PostsSvc) {

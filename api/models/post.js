@@ -1,3 +1,7 @@
+/* post.js
+Data storage definition for Post.
+*/
+
 var db = require('../../api/db.js');
 
 var Post = db.model('Post', {
