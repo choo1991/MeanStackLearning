@@ -21,9 +21,5 @@ gulp.task('js', function () {
 Watch for change in Angular code and run Gulp
 */
 gulp.task('watch:js', ['js'], function () {
-	gulp.watch('../ng/**/*.js', ['js']);
-});
-
-gulp.task('watch:css', function () {
-	gulp.watch('../css/**/*.styl', ['css']);
+	gulp.watch('ng/**/*.js', ['js']);
 });
