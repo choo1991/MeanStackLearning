@@ -2,9 +2,10 @@
 Angular code backing up the posts page.
 */
 
-var app = angular.module('app', []);
+//var app = angular.module('app', []);
 
-app.controller('PostsCtrl', function ($scope, PostsSvc) {
+angular.module('app')
+.controller('PostsCtrl', function ($scope, PostsSvc) {
 	PostsSvc.fetch().success(function (posts) {
 		$scope.posts = posts;
 	});
@@ -22,7 +23,8 @@ app.controller('PostsCtrl', function ($scope, PostsSvc) {
 	}
 });
 
-app.service('PostsSvc', function ($http) {
+angular.module('app')
+.service('PostsSvc', function ($http) {
 	this.fetch = function () {
 		return $http.get('/api/posts');
 	}
