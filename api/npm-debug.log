@@ -1,0 +1,113 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/james/.nvm/versions/node/v4.4.2/bin/node',
+1 verbose cli   '/home/james/.nvm/versions/node/v4.4.2/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'grub' ]
+2 info using npm@2.15.0
+3 info using node@v4.4.2
+4 verbose install initial load of /home/james/Documents/MEANStack/api/package.json
+5 warn package.json socialapp@ No description
+6 warn package.json socialapp@ No repository field.
+7 warn package.json socialapp@ No README data
+8 warn package.json socialapp@ No license field.
+9 verbose installManyTop reading scoped package data from /home/james/Documents/MEANStack/api/node_modules/bcrypt/package.json
+10 verbose installManyTop reading scoped package data from /home/james/Documents/MEANStack/api/node_modules/body-parser/package.json
+11 verbose installManyTop reading scoped package data from /home/james/Documents/MEANStack/api/node_modules/express/package.json
+12 verbose installManyTop reading scoped package data from /home/james/Documents/MEANStack/api/node_modules/gulp/package.json
+13 verbose installManyTop reading scoped package data from /home/james/Documents/MEANStack/api/node_modules/gulp-concat/package.json
+14 verbose installManyTop reading scoped package data from /home/james/Documents/MEANStack/api/node_modules/gulp-ng-annotate/package.json
+15 verbose installManyTop reading scoped package data from /home/james/Documents/MEANStack/api/node_modules/gulp-nodemon/package.json
+16 verbose installManyTop reading scoped package data from /home/james/Documents/MEANStack/api/node_modules/gulp-sourcemaps/package.json
+17 verbose installManyTop reading scoped package data from /home/james/Documents/MEANStack/api/node_modules/gulp-stylus/package.json
+18 verbose installManyTop reading scoped package data from /home/james/Documents/MEANStack/api/node_modules/gulp-uglify/package.json
+19 verbose installManyTop reading scoped package data from /home/james/Documents/MEANStack/api/node_modules/jwt-simple/package.json
+20 verbose installManyTop reading scoped package data from /home/james/Documents/MEANStack/api/node_modules/lodash/package.json
+21 verbose installManyTop reading scoped package data from /home/james/Documents/MEANStack/api/node_modules/mongoose/package.json
+22 verbose installManyTop reading scoped package data from /home/james/Documents/MEANStack/api/node_modules/nodemon/package.json
+23 verbose readDependencies loading dependencies from /home/james/Documents/MEANStack/api/package.json
+24 silly cache add args [ 'grub', null ]
+25 verbose cache add spec grub
+26 silly cache add parsed spec Result {
+26 silly cache add   raw: 'grub',
+26 silly cache add   scope: null,
+26 silly cache add   name: 'grub',
+26 silly cache add   rawSpec: '',
+26 silly cache add   spec: 'latest',
+26 silly cache add   type: 'tag' }
+27 silly addNamed grub@latest
+28 verbose addNamed "latest" is being treated as a dist-tag for grub
+29 info addNameTag [ 'grub', 'latest' ]
+30 silly mapToRegistry name grub
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry data Result {
+33 silly mapToRegistry   raw: 'grub',
+33 silly mapToRegistry   scope: null,
+33 silly mapToRegistry   name: 'grub',
+33 silly mapToRegistry   rawSpec: '',
+33 silly mapToRegistry   spec: 'latest',
+33 silly mapToRegistry   type: 'tag' }
+34 silly mapToRegistry uri https://registry.npmjs.org/grub
+35 verbose addNameTag registry:https://registry.npmjs.org/grub not in flight; fetching
+36 verbose request uri https://registry.npmjs.org/grub
+37 verbose request no auth needed
+38 info attempt registry request try #1 at 10:53:18 PM
+39 verbose request id 3c94be3f5e809f44
+40 http request GET https://registry.npmjs.org/grub
+41 http 404 https://registry.npmjs.org/grub
+42 verbose headers { 'content-type': 'application/json',
+42 verbose headers   'cache-control': 'max-age=0',
+42 verbose headers   'content-length': '2',
+42 verbose headers   'accept-ranges': 'bytes',
+42 verbose headers   date: 'Fri, 13 May 2016 05:53:18 GMT',
+42 verbose headers   via: '1.1 varnish',
+42 verbose headers   age: '0',
+42 verbose headers   connection: 'keep-alive',
+42 verbose headers   'x-served-by': 'cache-sjc3127-SJC',
+42 verbose headers   'x-cache': 'MISS',
+42 verbose headers   'x-cache-hits': '0',
+42 verbose headers   'x-timer': 'S1463118798.964731,VS0,VE32',
+42 verbose headers   vary: 'Accept-Encoding' }
+43 silly get cb [ 404,
+43 silly get   { 'content-type': 'application/json',
+43 silly get     'cache-control': 'max-age=0',
+43 silly get     'content-length': '2',
+43 silly get     'accept-ranges': 'bytes',
+43 silly get     date: 'Fri, 13 May 2016 05:53:18 GMT',
+43 silly get     via: '1.1 varnish',
+43 silly get     age: '0',
+43 silly get     connection: 'keep-alive',
+43 silly get     'x-served-by': 'cache-sjc3127-SJC',
+43 silly get     'x-cache': 'MISS',
+43 silly get     'x-cache-hits': '0',
+43 silly get     'x-timer': 'S1463118798.964731,VS0,VE32',
+43 silly get     vary: 'Accept-Encoding' } ]
+44 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/grub
+44 verbose stack     at makeError (/home/james/.nvm/versions/node/v4.4.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+44 verbose stack     at CachingRegistryClient.<anonymous> (/home/james/.nvm/versions/node/v4.4.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+44 verbose stack     at Request._callback (/home/james/.nvm/versions/node/v4.4.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+44 verbose stack     at Request.self.callback (/home/james/.nvm/versions/node/v4.4.2/lib/node_modules/npm/node_modules/request/request.js:199:22)
+44 verbose stack     at emitTwo (events.js:87:13)
+44 verbose stack     at Request.emit (events.js:172:7)
+44 verbose stack     at Request.<anonymous> (/home/james/.nvm/versions/node/v4.4.2/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+44 verbose stack     at emitOne (events.js:82:20)
+44 verbose stack     at Request.emit (events.js:169:7)
+44 verbose stack     at IncomingMessage.<anonymous> (/home/james/.nvm/versions/node/v4.4.2/lib/node_modules/npm/node_modules/request/request.js:963:12)
+45 verbose statusCode 404
+46 verbose pkgid grub
+47 verbose cwd /home/james/Documents/MEANStack/api
+48 error Linux 4.2.0-35-generic
+49 error argv "/home/james/.nvm/versions/node/v4.4.2/bin/node" "/home/james/.nvm/versions/node/v4.4.2/bin/npm" "install" "--save" "grub"
+50 error node v4.4.2
+51 error npm  v2.15.0
+52 error code E404
+53 error 404 Registry returned 404 for GET on https://registry.npmjs.org/grub
+53 error 404
+53 error 404 'grub' is not in the npm registry.
+53 error 404 You should bug the author to publish it (or use the name yourself!)
+53 error 404 It was specified as a dependency of 'socialapp'
+53 error 404
+53 error 404 Note that you can also install from a
+53 error 404 tarball, folder, http url, or git url.
+54 verbose exit [ 1, true ]
