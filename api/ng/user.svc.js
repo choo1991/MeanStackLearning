@@ -14,4 +14,11 @@ angular.module('app')
 			return svc.getUser();
 		});
 	}
+	svc.register = function (email, username, password) {
+		return $http.post('/api/users', {
+			email: email,
+			username: username,
+			password: password
+		});
+	}
 });
